@@ -11,7 +11,6 @@ const Navbar = () => {
     { name: "Home", href: "#home", isHash: true },
     { name: "About", href: "#about", isHash: true },
     { name: "Services", href: "#services", isHash: true },
-    { name: "Impact", href: "#impact", isHash: true },
     { name: "Contact", href: "/contact", isHash: false },
   ];
 
@@ -49,9 +48,6 @@ const Navbar = () => {
                 </Link>
               )
             )}
-            <Button className="gradient-primary shadow-medium hover:shadow-glow transition-smooth">
-              Get Started
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -89,9 +85,6 @@ const Navbar = () => {
                   </Link>
                 )
               )}
-              <Button className="gradient-primary shadow-medium w-full">
-                Get Started
-              </Button>
             </div>
           </div>
         )}

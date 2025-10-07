@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin, Instagram, Mail } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,10 +10,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">M</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img src={logo} alt="Midpoint Innovations Nigeria" className="h-14 w-auto" />
               <div className="flex flex-col">
                 <span className="font-heading font-bold text-lg leading-tight text-background">Midpoint</span>
                 <span className="text-xs text-background/70">Innovations Nigeria</span>
@@ -65,9 +64,9 @@ const Footer = () => {
             <ul className="space-y-3 text-background/80">
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-primary" />
-                <span className="text-sm">info@midpointinnovations.ng</span>
+                <span className="text-sm">info@midpointinnovations.com.ng</span>
               </li>
-              <li>+234 (0) 800 123 4567</li>
+              <li>+2348139555987</li>
               <li>
                 Innovation Hub<br />
                 Victoria Island, Lagos<br />
