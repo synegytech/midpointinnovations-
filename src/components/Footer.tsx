@@ -68,9 +68,8 @@ const Footer = () => {
               </li>
               <li>+2348139555987</li>
               <li>
-                Innovation Hub<br />
-                Victoria Island, Lagos<br />
-                Nigeria
+                D9 Kingstown Estate, Life Camp<br />
+                FCT, Abuja, Nigeria
               </li>
             </ul>
           </div>
