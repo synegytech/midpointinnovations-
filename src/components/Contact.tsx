@@ -117,7 +117,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-heading text-xl mb-2">Email Us</h3>
                   <p className="text-muted-foreground">info@midpointinnovations.ng</p>
-                  <p className="text-muted-foreground">partnerships@midpointinnovations.ng</p>
+                  <p className="text-muted-foreground">eaniagolu@yahoo.com</p>
                 </div>
               </div>
             </Card>
@@ -129,8 +129,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-heading text-xl mb-2">Call Us</h3>
-                  <p className="text-muted-foreground">+234 (0) 800 123 4567</p>
-                  <p className="text-muted-foreground">+234 (0) 900 987 6543</p>
+                  <p className="text-muted-foreground">+234 813 955 5987</p>
                 </div>
               </div>
             </Card>
@@ -143,8 +142,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-heading text-xl mb-2">Visit Us</h3>
                   <p className="text-muted-foreground">
-                    Innovation Hub, Victoria Island<br />
-                    Lagos, Nigeria
+                    D9 Kingstown Estate, Life Camp<br />
+                    FCT, Abuja, Nigeria
                   </p>
                 </div>
               </div>

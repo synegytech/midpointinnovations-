@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Impact", href: "#impact" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "#home", isHash: true },
+    { name: "About", href: "#about", isHash: true },
+    { name: "Services", href: "#services", isHash: true },
+    { name: "Impact", href: "#impact", isHash: true },
+    { name: "Contact", href: "/contact", isHash: false },
   ];
 
   return (
@@ -18,27 +20,35 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center shadow-medium">
-              <span className="text-primary-foreground font-bold text-xl">M</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img src={logo} alt="Midpoint Innovations Nigeria" className="h-14 w-auto" />
             <div className="flex flex-col">
               <span className="font-heading font-bold text-lg leading-tight">Midpoint</span>
               <span className="text-xs text-muted-foreground">Innovations Nigeria</span>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-foreground hover:text-primary transition-smooth font-medium"
-              >
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link) => 
+              link.isHash ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-foreground hover:text-primary transition-smooth font-medium"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  className="text-foreground hover:text-primary transition-smooth font-medium"
+                >
+                  {link.name}
+                </Link>
+              )
+            )}
             <Button className="gradient-primary shadow-medium hover:shadow-glow transition-smooth">
               Get Started
             </Button>
@@ -58,16 +68,27 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden pb-6 animate-fade-in">
             <div className="flex flex-col space-y-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-foreground hover:text-primary transition-smooth font-medium py-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </a>
-              ))}
+              {navLinks.map((link) => 
+                link.isHash ? (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    className="text-foreground hover:text-primary transition-smooth font-medium py-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    className="text-foreground hover:text-primary transition-smooth font-medium py-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                )
+              )}
               <Button className="gradient-primary shadow-medium w-full">
                 Get Started
               </Button>
