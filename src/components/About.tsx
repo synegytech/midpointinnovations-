@@ -1,10 +1,20 @@
 import { Target, Eye, Award } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import heroInnovation from "@/assets/hero-innovation.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-24 bg-muted/30 relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 opacity-5">
+        <img 
+          src={heroInnovation} 
+          alt="" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="font-heading text-4xl md:text-5xl mb-6">
             About <span className="text-primary">Midpoint Innovations</span>
@@ -17,8 +27,8 @@ const About = () => {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Vision */}
-          <Card className="p-8 border-2 hover:border-primary transition-smooth shadow-soft hover:shadow-medium group animate-scale-in">
-            <div className="w-16 h-16 rounded-xl gradient-primary flex items-center justify-center mb-6 group-hover:shadow-glow transition-smooth">
+          <Card className="p-8 border-2 hover:border-primary transition-smooth shadow-soft hover:shadow-medium group animate-scale-in hover:scale-105">
+            <div className="w-16 h-16 rounded-xl gradient-primary flex items-center justify-center mb-6 group-hover:shadow-glow transition-smooth group-hover:rotate-6">
               <Eye className="w-8 h-8 text-primary-foreground" />
             </div>
             <h3 className="font-heading text-2xl mb-4 group-hover:text-primary transition-smooth">Our Vision</h3>
@@ -29,8 +39,8 @@ const About = () => {
           </Card>
 
           {/* Mission */}
-          <Card className="p-8 border-2 hover:border-secondary transition-smooth shadow-soft hover:shadow-medium group animate-scale-in" style={{ animationDelay: "0.1s" }}>
-            <div className="w-16 h-16 rounded-xl gradient-secondary flex items-center justify-center mb-6 group-hover:shadow-glow transition-smooth">
+          <Card className="p-8 border-2 hover:border-secondary transition-smooth shadow-soft hover:shadow-medium group animate-scale-in hover:scale-105" style={{ animationDelay: "0.1s" }}>
+            <div className="w-16 h-16 rounded-xl gradient-secondary flex items-center justify-center mb-6 group-hover:shadow-glow transition-smooth group-hover:rotate-6">
               <Target className="w-8 h-8 text-secondary-foreground" />
             </div>
             <h3 className="font-heading text-2xl mb-4 group-hover:text-secondary transition-smooth">Our Mission</h3>
@@ -41,8 +51,8 @@ const About = () => {
           </Card>
 
           {/* Values */}
-          <Card className="p-8 border-2 hover:border-primary transition-smooth shadow-soft hover:shadow-medium group animate-scale-in" style={{ animationDelay: "0.2s" }}>
-            <div className="w-16 h-16 rounded-xl gradient-primary flex items-center justify-center mb-6 group-hover:shadow-glow transition-smooth">
+          <Card className="p-8 border-2 hover:border-primary transition-smooth shadow-soft hover:shadow-medium group animate-scale-in hover:scale-105" style={{ animationDelay: "0.2s" }}>
+            <div className="w-16 h-16 rounded-xl gradient-primary flex items-center justify-center mb-6 group-hover:shadow-glow transition-smooth group-hover:rotate-6">
               <Award className="w-8 h-8 text-primary-foreground" />
             </div>
             <h3 className="font-heading text-2xl mb-4 group-hover:text-primary transition-smooth">Our Values</h3>

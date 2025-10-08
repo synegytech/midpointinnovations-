@@ -62,11 +62,11 @@ const Services = () => {
             return (
               <Card 
                 key={service.title}
-                className="p-8 border-2 hover:border-primary transition-smooth shadow-soft hover:shadow-medium group animate-scale-in"
+                className="p-8 border-2 hover:border-primary transition-smooth shadow-soft hover:shadow-medium group animate-scale-in hover:scale-105 cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className={`w-14 h-14 rounded-xl ${isPrimary ? 'gradient-primary' : 'gradient-secondary'} flex items-center justify-center mb-6 group-hover:shadow-glow transition-smooth`}>
-                  <Icon className="w-7 h-7 text-white" />
+                <div className={`w-14 h-14 rounded-xl ${isPrimary ? 'gradient-primary' : 'gradient-secondary'} flex items-center justify-center mb-6 group-hover:shadow-glow transition-smooth group-hover:rotate-12`}>
+                  <Icon className="w-7 h-7 text-white group-hover:scale-110 transition-smooth" />
                 </div>
                 <h3 className="font-heading text-xl mb-3 group-hover:text-primary transition-smooth">
                   {service.title}
