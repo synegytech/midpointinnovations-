@@ -31,12 +31,14 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5 pt-4">
-            <Button size="lg" className="h-12 px-8 text-base font-medium">
-              Partner With Us
-              <ArrowRight className="ml-2 w-4 h-4" />
+            <Button size="lg" className="h-12 px-8 text-base font-medium" asChild>
+              <a href="/contact">
+                Partner With Us
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="h-12 px-8 text-base font-medium">
-              Learn More
+            <Button size="lg" variant="outline" className="h-12 px-8 text-base font-medium" asChild>
+              <a href="/about">Learn More</a>
             </Button>
           </div>
         </div>
