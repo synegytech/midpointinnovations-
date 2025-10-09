@@ -1,22 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import bulbImage from "@/assets/bulb.jpg";
+import PlexusBackground from "./PlexusBackground";
 
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
-      {/* Subtle Background */}
-      <div className="absolute inset-0 bg-background"></div>
+      {/* Animated Plexus Background */}
+      <div className="absolute inset-0 bg-background">
+        <PlexusBackground />
+      </div>
 
-      {/* Hero Image - Positioned Right */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full hidden lg:block">
+      {/* Hero Image - Visible on all screen sizes */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full lg:w-1/2 h-full">
         <div className="relative w-full h-full">
           <img
             src={bulbImage}
             alt="Innovation lightbulb representing creative solutions"
-            className="w-full h-full object-contain opacity-80"
+            className="w-full h-full object-contain opacity-30 lg:opacity-80"
           />
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-background"></div>
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/50 to-background lg:via-transparent"></div>
         </div>
       </div>
 
