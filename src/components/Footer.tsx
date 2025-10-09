@@ -14,7 +14,7 @@ const Footer = () => {
               <img src={logo} alt="Midpoint Innovations Nigeria" className="h-14 w-auto" />
               <div className="flex flex-col">
                 <span className="font-heading font-bold text-lg leading-tight text-background">Midpoint</span>
-                <span className="text-xs text-background/70">Innovations Nigeria</span>
+                <span className="text-xs font-bold text-primary">Innovations Nigeria</span>
               </div>
             </div>
             <p className="text-background/80 mb-6 leading-relaxed">
