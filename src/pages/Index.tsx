@@ -5,7 +5,7 @@ import Services from "@/components/Services";
 import Impact from "@/components/Impact";
 import Footer from "@/components/Footer";
 import PlexusBackground from "@/components/PlexusBackground";
-import techGirlImage from "@/assets/TECHGIRL.png";
+import heroBulbImage from "@/assets/hero-bulb.jpg";
 
 const Index = () => {
   return (
@@ -13,11 +13,10 @@ const Index = () => {
       {/* Hero Background Image - Lowest layer */}
       <div className="fixed inset-0 z-0">
         <img 
-          src={techGirlImage} 
-          alt="Technology innovation" 
-          className="w-full h-full object-cover opacity-20"
+          src={heroBulbImage} 
+          alt="Innovation technology lightbulb" 
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background"></div>
       </div>
 
       {/* Plexus Background - Middle layer */}
