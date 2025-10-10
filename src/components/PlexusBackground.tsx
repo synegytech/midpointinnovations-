@@ -54,7 +54,7 @@ const PlexusBackground = () => {
         // Draw particle
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, 2, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(59, 130, 246, 0.5)";
+        ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
         ctx.fill();
       });
 
@@ -66,11 +66,11 @@ const PlexusBackground = () => {
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < connectionDistance) {
-            const opacity = (1 - distance / connectionDistance) * 0.3;
+            const opacity = (1 - distance / connectionDistance) * 0.5;
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(59, 130, 246, ${opacity})`;
+            ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
             ctx.lineWidth = 1;
             ctx.stroke();
           }
@@ -98,7 +98,7 @@ const PlexusBackground = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full opacity-40"
+      className="absolute inset-0 w-full h-full opacity-70"
       style={{ pointerEvents: "none" }}
     />
   );
