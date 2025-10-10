@@ -1,11 +1,20 @@
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
     { name: "Home", href: "/", isHash: false },
@@ -15,7 +24,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-soft">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled 
+        ? "bg-background/95 backdrop-blur-md border-b border-border shadow-[0_4px_20px_rgba(0,0,0,0.08)]" 
+        : "bg-transparent"
+    }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -48,6 +61,12 @@ const Navbar = () => {
                 </Link>
               )
             )}
+            <Button size="default" className="ml-4" asChild>
+              <Link to="/contact">
+                Partner With Us
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
