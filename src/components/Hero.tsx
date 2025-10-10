@@ -8,12 +8,12 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="max-w-2xl lg:max-w-xl space-y-10">
-          <h1 className="font-sans text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
+          <h1 className="font-sans text-5xl md:text-6xl lg:text-[4.375rem] font-bold leading-tight tracking-tight">
             Driving Innovation for{" "}
             <span className="text-primary">Africa's Future</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
+          <p className="text-lg md:text-xl text-white leading-relaxed max-w-xl">
             Empowering socioeconomic advancement through strategic partnerships and transformative innovation.
           </p>
 
