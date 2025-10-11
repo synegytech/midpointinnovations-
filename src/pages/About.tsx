@@ -2,6 +2,7 @@ import { Target, Eye, Award, Building2, Calendar } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Team from "@/components/Team";
 import heroInnovation from "@/assets/hero-innovation.jpg";
 
 const About = () => {
@@ -127,6 +128,9 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Team Section */}
+      <Team />
 
       <Footer />
     </div>
