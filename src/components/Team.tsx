@@ -149,13 +149,6 @@ const Team = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-smooth"
                   />
                 </div>
-                <div className="p-6 text-center">
-                  <h3 className="font-heading text-xl mb-2 group-hover:text-primary transition-smooth">
-                    {member.name}
-                  </h3>
-                  <p className="text-sm text-muted-foreground mb-1">{member.title}</p>
-                  <p className="text-xs font-semibold text-primary">{member.shortTitle}</p>
-                </div>
               </Card>
             ))}
           </div>
