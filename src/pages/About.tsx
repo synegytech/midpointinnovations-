@@ -59,7 +59,7 @@ const About = () => {
                       Consultants (area experts from a variety of disciplines), that have the freedom to
                       suggest, initiate and/or innovate research and development on any project or idea
                       of their choice; which, once proven to be feasible, the rest of the Associate
-                      Consultants collaborates to bring the idea(s) to fruition.
+                      Consultants collaborate to bring the idea(s) to fruition.
                     </p>
                   </div>
                 </div>
