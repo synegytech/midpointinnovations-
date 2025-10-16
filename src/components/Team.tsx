@@ -7,10 +7,10 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import svg1 from "@/assets/1.svg";
-import svg2 from "@/assets/2.svg";
-import svg3 from "@/assets/3.svg";
-import svg4 from "@/assets/4.svg";
+import svg1 from "@/assets/1.png";
+import svg2 from "@/assets/2.png";
+import svg3 from "@/assets/3.png";
+import svg4 from "@/assets/4.png";
 
 interface TeamMember {
   id: number;
@@ -66,7 +66,7 @@ const teamMembers: TeamMember[] = [
     ],
     education: [
       "Postgraduate degree in Information Systems and Technology (in progress)",
-      "Introduction to Cybersecurity Awareness (HP Life/HP Foundation)",
+      "Cybersecurity Awareness (HP Life/HP Foundation)",
       "Effective Leadership (HP Life/HP Foundation)",
       "Cisco Cybersecurity Certification",
       "Lecturer: User Interaction Design, Usability Engineering, and User Experience Design at Veritas University Abuja",
