@@ -135,7 +135,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 6,
     name: "Azuka Celestine Adigeme",
-    title: "Associate Consultant (AC)",
+    title: "Associate Consultant",
     shortTitle: "AC",
     avatar: svg6,
     bio: [
