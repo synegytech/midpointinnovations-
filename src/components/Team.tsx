@@ -12,6 +12,7 @@ import svg2 from "@/assets/2.png";
 import svg3 from "@/assets/3.png";
 import svg4 from "@/assets/4.png";
 import svg5 from "@/assets/5.png";
+import svg6 from "@/assets/6.png";
 
 interface TeamMember {
   id: number;
@@ -129,6 +130,22 @@ const teamMembers: TeamMember[] = [
       education: [
       "Bachelor’s Degree in Economics and over a decade experience in administration, operations and business management.",
 
+    ],
+  },
+  {
+    id: 6,
+    name: "Azuka Celestine Adigeme",
+    title: "Associate Consultant (AC)",
+    shortTitle: "AC",
+    avatar: svg6,
+    bio: [
+     "Azuka Celestine Adigweme is a seasoned professional with over five decades of diverse experience in engineering, procurement, and supply chain management.",
+     "Throughout his career, he has held various roles as a practitioner and consultant, demonstrating a commitment to excellence and innovation in his field.",
+    ],
+      education: [
+      "Government College Umuahia",
+      "Ahmadu Bello University, Zaria",
+      "Graduated in 1973 with a First Class Honours Bachelor’s Degree in Mechanical Engineering.",
     ],
   },
 ];
