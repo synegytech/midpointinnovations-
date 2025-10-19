@@ -11,6 +11,7 @@ import svg1 from "@/assets/1.png";
 import svg2 from "@/assets/2.png";
 import svg3 from "@/assets/3.png";
 import svg4 from "@/assets/4.png";
+import svg5 from "@/assets/5.png";
 
 interface TeamMember {
   id: number;
@@ -113,6 +114,21 @@ const teamMembers: TeamMember[] = [
       "Lecturer at ESUT Business School in Enugu, Nigeria",
       "Former Economist with the US Department of Housing and Urban Development",
       "World Bank experience",
+    ],
+  },
+   {
+    id: 5,
+    name: "Ms. Moneji Blessing Edi",
+    title: "Operations Manager",
+    shortTitle: "OM",
+    avatar: svg5,
+    bio: [
+     "Ms. Moneji Blessing Edi has a background in administration and HR, Moneji has worked with top executives in government and business to provide technical support by aligning operations with the firm’s strategic objectives while ensuring effective communication with partners and stakeholders.", 
+      "Passionate about creating organized systems, nurturing professional relationships, and driving operational excellence, Moneji focuses on fostering collaborations, and supporting leadership in achieving long-term organizational goals."
+      ],
+      education: [
+      "Bachelor’s Degree in Economics and over a decade experience in administration, operations and business management.",
+
     ],
   },
 ];
