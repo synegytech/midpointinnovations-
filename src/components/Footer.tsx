@@ -14,7 +14,7 @@ const Footer = () => {
               <img src={logo} alt="Midpoint Innovations Nigeria" className="h-14 w-auto" />
               <div className="flex flex-col">
                 <span className="font-heading font-bold text-lg leading-tight text-background">Midpoint</span>
-                <span className="text-xs font-bold text-primary">Innovations Nigeria</span>
+                <span className="text-xs font-bold text-primary">Innovations Ltd.</span>
               </div>
             </div>
             <p className="text-background/80 mb-6 leading-relaxed">
@@ -73,7 +73,7 @@ const Footer = () => {
         {/* Social Links */}
         <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-background/70 text-sm mb-4 md:mb-0">
-            © {currentYear} Midpoint Innovations Nigeria, Limited. All rights reserved.
+            © {currentYear} Midpoint Innovations Limited. All rights reserved.
           </p>
           
           <div className="flex space-x-4">
