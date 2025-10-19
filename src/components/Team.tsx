@@ -139,9 +139,10 @@ const teamMembers: TeamMember[] = [
     shortTitle: "AC",
     avatar: svg6,
     bio: [
-     "Azuka Celestine Adigweme is a seasoned professional with over five decades of diverse experience in engineering, procurement, and supply chain management.",
-     "Throughout his career, he has held various roles as a practitioner and consultant, demonstrating a commitment to excellence and innovation in his field.",
-    ],
+     "His educational background laid a strong foundation for a distinguished career in engineering, where he has consistently demonstrated excellence and commitment to his field.",
+     "With over five decades of experience, Azuka has worked as both a practitioner and consultant in engineering, procurement, and supply chain management. His extensive expertise is complemented by well-developed analytical and problem-solving skills, as well as a proven ability to lead and motivate teams effectively.",
+     "Azuka's versatility and leadership qualities make him a valuable asset.",
+      ],
       education: [
       "Government College Umuahia",
       "Ahmadu Bello University, Zaria",
