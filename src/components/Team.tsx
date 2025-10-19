@@ -148,6 +148,9 @@ const Team = () => {
               Our leadership team brings together expertise from across technology, law, economics,
               and innovation to drive transformative change across Africa.
             </p>
+            <p className="text-xl text-muted-foreground leading-relaxed">
+             <strong>Click on a team member to view their biography</strong>
+            </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
