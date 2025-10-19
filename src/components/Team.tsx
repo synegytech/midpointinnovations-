@@ -147,7 +147,7 @@ const Team = () => {
             <p className="text-xl text-muted-foreground leading-relaxed">
               Our leadership team brings together expertise from across technology, law, economics,
               and innovation to drive transformative change across Africa.
-            </p>
+            </p><br></br>
             <p className="text-xl text-muted-foreground leading-relaxed">
              <strong>Click on a team member to view their biography</strong>
             </p>
