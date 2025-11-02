@@ -45,9 +45,8 @@ const teamMembers: TeamMember[] = [
     ],
     education: [
       "Professor in Black World Studies at Ohio Wesleyan University",
-      "Visiting Professor at Veritas University, Bwari, Abuja",
       "Graduate studies in Political Science and African Studies at The Ohio State University",
-      "Published author: Black Mustard Seed (Commonwealth Writers Prize nominee, 2002)",
+      "Published author: 21+ Books including Black Mustard Seed (Commonwealth Writers Prize nominee, 2002)",
     ],
   },
   {
@@ -134,7 +133,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 6,
-    name: "Azuka Celestine Adigeme",
+    name: "Azuka Celestine Adigweme",
     title: "Associate Consultant",
     shortTitle: "AC",
     avatar: svg6,
