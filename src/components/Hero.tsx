@@ -4,7 +4,7 @@ import techGirlImage from "@/assets/TECHGIRL.png";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+    <header id="home" className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
       {/* Content */}
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="max-w-2xl lg:max-w-xl space-y-10">
@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 

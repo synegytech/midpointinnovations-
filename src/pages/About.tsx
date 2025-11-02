@@ -3,21 +3,38 @@ import { Card } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Team from "@/components/Team";
+import SEO from "@/components/SEO";
 import heroInnovation from "@/assets/hero-innovation.jpg";
 
 const About = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Midpoint Innovations Nigeria",
+    "description": "Learn about Midpoint Innovations - a forward-thinking organization catalyzing socioeconomic advancement in Africa through innovation and strategic partnerships."
+  };
+
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <>
+      <SEO 
+        title="About Us - Innovation for Africa's Future"
+        description="Learn about Midpoint Innovations - a forward-thinking organization catalyzing socioeconomic advancement in Africa through innovation, creativity, and strategic partnerships."
+        keywords="About Midpoint Innovations, Nigeria innovation company, African development organization, R&D Nigeria, innovation consultancy Africa"
+        canonical="/about"
+        structuredData={structuredData}
+      />
+      <div className="min-h-screen">
+        <Navbar />
       
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-primary/5 to-background relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <img 
-            src={heroInnovation} 
-            alt="" 
-            className="w-full h-full object-cover"
-          />
+        {/* Hero Section */}
+        <header className="pt-32 pb-16 bg-gradient-to-b from-primary/5 to-background relative overflow-hidden">
+          <div className="absolute inset-0 opacity-5">
+            <img 
+              src={heroInnovation} 
+              alt="Innovation and technology lightbulb representing African development" 
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
@@ -30,11 +47,12 @@ const About = () => {
               in Nigeria and across Africa through innovation, creativity, and strategic collaboration.
             </p>
           </div>
-        </div>
-      </section>
+          </div>
+        </header>
 
-      {/* Company Overview */}
-      <section className="py-16 bg-background">
+        {/* Company Overview */}
+        <main>
+          <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Card className="p-8 md:p-12 border-2 shadow-medium animate-scale-in">
@@ -129,11 +147,13 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <Team />
+          {/* Team Section */}
+          <Team />
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 

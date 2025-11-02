@@ -42,10 +42,10 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-background">
+    <section id="services" className="py-24 bg-background" aria-labelledby="services-heading">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="font-heading text-4xl md:text-5xl mb-6">
+          <h2 id="services-heading" className="font-heading text-4xl md:text-5xl mb-6">
             Our <span className="text-primary">Focus Areas</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">

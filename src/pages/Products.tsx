@@ -1,11 +1,28 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Smartphone, Zap, CreditCard, BarChart3, Bell, Shield } from "lucide-react";
 import meterbuddyApp from "@/assets/meterbuddy-app.png";
 
 const Products = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "MeterBuddy™ App",
+    "description": "Mobile application for remote electric meter monitoring, balance management, and energy usage insights in Nigeria",
+    "brand": {
+      "@type": "Organization",
+      "name": "Midpoint Innovations Nigeria Limited"
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/PreOrder",
+      "priceCurrency": "NGN"
+    }
+  };
+
   const features = [
     {
       icon: Zap,
@@ -40,11 +57,20 @@ const Products = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <>
+      <SEO 
+        title="MeterBuddy™ App - Smart Energy Management"
+        description="Transform your energy management with MeterBuddy™. Monitor your electric meter remotely, manage balances, and gain insights into your energy usage in Nigeria."
+        keywords="MeterBuddy app, Nigeria electricity app, prepaid meter app, energy management Nigeria, meter balance monitoring, smart energy Nigeria"
+        canonical="/products"
+        type="product"
+        structuredData={structuredData}
+      />
+      <div className="min-h-screen">
+        <Navbar />
       
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-background to-muted/20">
+        {/* Hero Section */}
+        <header className="pt-32 pb-20 px-4 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-8">
             <Badge className="mb-4 text-sm px-4 py-1">Coming Soon</Badge>
@@ -55,11 +81,12 @@ const Products = () => {
               Radically improving the interaction between customers and electric utilities through innovative mobile technology
             </p>
           </div>
-        </div>
-      </section>
+          </div>
+        </header>
 
-      {/* Overview Section */}
-      <section className="py-20 px-4">
+        {/* Overview Section */}
+        <main>
+          <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -80,8 +107,9 @@ const Products = () => {
               <div className="relative z-10 max-w-sm mx-auto">
                 <img 
                   src={meterbuddyApp} 
-                  alt="MeterBuddy App Interface" 
+                  alt="MeterBuddy mobile app interface showing electric meter balance monitoring and payment features" 
                   className="w-full h-auto rounded-3xl shadow-elegant"
+                  loading="lazy"
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent blur-3xl -z-0" />
@@ -140,10 +168,12 @@ const Products = () => {
             </p>
           </Card>
         </div>
-      </section>
+        </section>
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 

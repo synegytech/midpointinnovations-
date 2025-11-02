@@ -3,11 +3,11 @@ import { Card } from "@/components/ui/card";
 
 const VisionMissionValues = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background" aria-labelledby="about-heading">
       <div className="container mx-auto px-4">
         {/* Intro */}
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="font-heading text-4xl md:text-5xl mb-6">
+          <h2 id="about-heading" className="font-heading text-4xl md:text-5xl mb-6">
             About <span className="text-primary">Midpoint Innovations</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
