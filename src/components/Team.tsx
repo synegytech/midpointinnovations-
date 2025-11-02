@@ -46,7 +46,7 @@ const teamMembers: TeamMember[] = [
     education: [
       "Professor in Black World Studies at Ohio Wesleyan University",
       "Graduate studies in Political Science and African Studies at The Ohio State University",
-      "Published author: 21+ Books including Black Mustard Seed (Commonwealth Writers Prize nominee, 2002)",
+      "Published author: 20+ Books including Black Mustard Seed (Commonwealth Writers Prize nominee, 2002)",
     ],
   },
   {
