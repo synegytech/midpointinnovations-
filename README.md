@@ -1,47 +1,141 @@
-# Welcome to midpoint web project
+# Midpoint Innovations Nigeria Limited
 
-## Project info
+<p align="center">
+  <strong>Humanity & Creativity Leads to Progress</strong><br/>
+  Driving socioeconomic advancement in Nigeria and Africa through innovation, creativity, and strategic partnerships.
+</p>
 
-**URL**: https://midpointinnovations.com.ng
+---
 
+## 🌐 Live Website
 
+**[midpointinnovations.com.ng](https://midpointinnovations.com.ng)**
 
+## 📖 About
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+Midpoint Innovations Nigeria Limited is dedicated to advancing socioeconomic development across Nigeria and Africa. We work at the intersection of government, businesses, and NGOs to deliver impactful solutions through innovation and strategic partnerships.
+
+Founded on **November 3, 2022**, by Prof. Emeka Aniagolu, the organization focuses on creating measurable impact across multiple sectors.
+
+## 🏗️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| [React 18](https://react.dev) | UI framework |
+| [TypeScript 5](https://www.typescriptlang.org) | Type-safe JavaScript |
+| [Vite 5](https://vitejs.dev) | Build tool & dev server |
+| [Tailwind CSS 3](https://tailwindcss.com) | Utility-first styling |
+| [shadcn/ui](https://ui.shadcn.com) | Component library |
+| [React Router](https://reactrouter.com) | Client-side routing |
+| [Framer Motion](https://www.framer.com/motion) | Animations |
+| [React Helmet Async](https://github.com/staylor/react-helmet-async) | SEO meta management |
+| [Lucide React](https://lucide.dev) | Icon library |
+| [TanStack React Query](https://tanstack.com/query) | Data fetching |
+
+## 📁 Project Structure
+
+```
+src/
+├── assets/          # Images, SVGs, and static assets
+├── components/      # Reusable UI components
+│   ├── ui/          # shadcn/ui base components
+│   ├── Navbar.tsx   # Site navigation
+│   ├── Hero.tsx     # Hero section
+│   ├── Footer.tsx   # Site footer
+│   ├── SEO.tsx      # Meta tags & structured data
+│   ├── Services.tsx # Services showcase
+│   ├── Impact.tsx   # Impact metrics
+│   ├── Team.tsx     # Team member profiles
+│   ├── CookieNotice.tsx  # GDPR cookie consent
+│   ├── PlexusBackground.tsx # Animated background
+│   └── ...
+├── hooks/           # Custom React hooks
+├── lib/             # Utility functions
+└── pages/           # Route-level page components
+    ├── Index.tsx     # Homepage
+    ├── About.tsx     # About page
+    ├── Products.tsx  # Products & services
+    ├── Contact.tsx   # Contact form
+    └── NotFound.tsx  # 404 page
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org) (v18 or higher)
+- npm, yarn, or bun
+
+### Installation
+
+```bash
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd midpoint-innovations
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will be available at `http://localhost:5173`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Available Scripts
 
-**Use GitHub Codespaces**
+| Script | Description |
+|---|---|
+| `npm run dev` | Start development server with HMR |
+| `npm run build` | Build for production |
+| `npm run build:dev` | Build in development mode |
+| `npm run lint` | Run ESLint |
+| `npm run preview` | Preview production build locally |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Design System
 
-## What technologies are used for this project?
+The project uses a custom design system built on Tailwind CSS with semantic tokens defined in `src/index.css`:
 
-This project is built with:
+- **Primary**: Vibrant orange-yellow (`hsl(36, 100%, 50%)`)
+- **Secondary**: Professional blue (`hsl(207, 90%, 54%)`)
+- **Accent**: Teal accent (`hsl(174, 72%, 56%)`)
+- Full dark mode support
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+All colors use HSL format and are referenced via CSS custom properties for consistency.
 
+## 🔍 SEO
+
+- Dynamic meta tags via `react-helmet-async`
+- Open Graph & Twitter Card support
+- JSON-LD structured data on all pages
+- Semantic HTML with proper heading hierarchy
+- XML sitemap at `/sitemap.xml`
+- `robots.txt` for crawler guidance
+- Lazy-loaded images with descriptive alt text
+- Google Search Console verified
+
+## 📄 Pages
+
+| Route | Page | Description |
+|---|---|---|
+| `/` | Home | Hero, vision/mission, services, impact metrics |
+| `/about` | About | Company story, team profiles, values |
+| `/products` | Products | Products and service offerings |
+| `/contact` | Contact | Contact form and company info |
+
+## 🚢 Deployment
+
+The project is configured for deployment on **Netlify** with configuration in `netlify.toml`. It can also be deployed to any static hosting provider that supports single-page applications.
+
+```bash
+# Build for production
+npm run build
+
+# Output is in the dist/ directory
+```
+
+## 📜 License
+
+© 2022–2026 Midpoint Innovations Nigeria Limited. All rights reserved.
