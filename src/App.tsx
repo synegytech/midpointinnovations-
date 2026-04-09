@@ -31,7 +31,10 @@ const App = () => {
         <Toaster />
         <Sonner />
         {loading && (
-          <div className="transition-opacity duration-500" style={{ opacity: loading ? 1 : 0 }}>
+          <div
+            className="transition-opacity duration-500 ease-out"
+            style={{ opacity: fadeOut ? 0 : 1 }}
+          >
             <Loader />
           </div>
         )}
