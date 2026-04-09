@@ -17,10 +17,12 @@ const queryClient = new QueryClient();
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000);
-    return () => clearTimeout(timer);
+    const fadeTimer = setTimeout(() => setFadeOut(true), 1800);
+    const removeTimer = setTimeout(() => setLoading(false), 2300);
+    return () => { clearTimeout(fadeTimer); clearTimeout(removeTimer); };
   }, []);
 
   return (
